@@ -151,10 +151,15 @@ https://github.com/Torndeco/extdb
 
 
 Distrikt41 basiert auf einer stark modifizierten Altis Life 3.1.4.8 Version von Tonic!
+ 
 https://github.com/TAWTonic/Altis-Life
+
 ExtDB von TornDeco
+ 
 https://github.com/Torndeco/extdb
+
 Weitere Addons:
+ 
 Weitere Infos über genutzte Mods innerhalb der Mission unter Map -> Changelog -> "Credits Distrikt41"
 
 
