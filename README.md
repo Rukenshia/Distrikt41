@@ -149,7 +149,7 @@ https://github.com/Torndeco/extdb
  
 .
  
-Distrikt41 basiert auf einer stark modifizierten Altis Life 3.1.4.8 Version von Tonic!
+Distrikt41 basiert auf einer stark modifizierten Altis Life V3.1.4.8 von Tonic!
  
 https://github.com/TAWTonic/Altis-Life
 
