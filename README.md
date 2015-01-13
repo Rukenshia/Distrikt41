@@ -43,12 +43,7 @@ ConfigType: ServerMachine
 
 ---------
 
-Schritt 1B:
-Nach der Installation vom MySQL-Server die Datei "my.ini" suchen (öffnen mit notepad/notepad++) und unter "[mysqld]" den Eintrag " event-scheduler=on " hinzufügen! (Wichtig!)
-
----------
-
-Schritt 1C
+Schritt 1B
 Nach dem erstellen des MySQL Admins (Der, mit dem Du auf dem Server von externen PCs verbinden möchtest) einen 2. User mit folgenden Einstellungen erstellen:
 
 MySQL User erstellen:
@@ -62,6 +57,11 @@ Host: localhost
 Alternativ (später) den Definer, in den Functions bzw. dem Event, zum vorhandenen Benutzer (mit der Restriktion des Host's "Localhost") umbenennen.
 
 P.S. Das man sich die Passwörter notieren muß, sollte zwar jedem klar sein, aber ich schreibe es trotz allem nochmals hier nieder.
+
+---------
+
+Schritt 1C:
+Nach der Installation vom MySQL-Server die Datei "my.ini" suchen (öffnen mit notepad/notepad++) und unter "[mysqld]" den Eintrag " event-scheduler=on " hinzufügen! (Wichtig!)
 
 ------------------
 
