@@ -24,6 +24,7 @@ Eine Community die seit Operation Flashpoint (2001) existiert und seit dem aufko
 Von daher:
 
 http://www.bistudio.com/licenses/arma-public-license-share-alike
+
 http://www.bistudio.com/community/licenses/arma-public-license-share-alike
 
 
