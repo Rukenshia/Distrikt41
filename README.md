@@ -27,7 +27,7 @@ http://www.bistudio.com/licenses/arma-public-license-share-alike
 
 http://www.bistudio.com/community/licenses/arma-public-license-share-alike
 
-
+.
 
 Da dies (hoffentlich) geklärt ist:
 
