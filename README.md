@@ -102,27 +102,27 @@ Komplettpaket entpacken und den "@Distrikt41" Ordner in den Arma 3 Root (Hauptor
 
 ------------------
 
-Schritt 6:
-Keys herunterladen und alle *.bikey Dateien in Arma3/keys einfügen
+Schritt 5:
+D41_ServerKeys.rar entpacken und alle *.bikey Dateien in Arma3/keys einfügen
 
 ------------------
 
-Schritt 7:
+Schritt 6:
 Missions Dateien herunterladen
 
 ------------------
 
-Schritt 8:
+Schritt 7:
 D41_extDB29.rar öffnen und KOMPLETTEN Inhalt in den Arma 3 HAUPTORDNER (Nicht Addons, Nicht DLC oder sonst irgendwohin!) kopieren!
 
 ------------------
 
-Schritt 9:
+Schritt 8:
 extdb-conf.ini öffnen und Passwort für D41_MySQL (Zeile: 42) anpassen! (ggf. Port anpassen (Zeile: 44), falls ein anderer bei der MySQL Installation angegeben wurde!)
 
 ------------------
 
-Schritt 10:
+Schritt 9:
 In der Server_config.cfg am Ende (Ja, das ganz ganz unten, wo nix mehr kommt!) folgendes einfügen:
 
 class Missions
@@ -136,12 +136,12 @@ difficulty = "veteran"; // ODER "regular"
 
 ------------------
 
-Schritt 11:
+Schritt 10:
 BEC/Rcon installieren/einstellen (Kein Support unsererseits! Seht selber zu, wie das Ding läuft - Es gibt mehr als genügend Tutorials dafür!)
 
 ------------------
 
-Schritt 12:
+Schritt 11:
 Server mit dem im Beispiel angegebenen Parametern starten:
 Bsp:
 Eine Verknüpfung der "arma3server.exe" auf dem Desktop erstellen.
