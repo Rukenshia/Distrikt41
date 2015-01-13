@@ -44,7 +44,7 @@ ConfigType: ServerMachine
 ---------
 
 Schritt 1B:
-my.ini suchen und unter "[mysqld]" den Eintrag " event-scheduler=on " hinzufügen! (Wichtig!)
+Nach der Installation vom MySQL-Server die Datei "my.ini" suchen (öffnen mit notepad/notepad++) und unter "[mysqld]" den Eintrag " event-scheduler=on " hinzufügen! (Wichtig!)
 
 ---------
 
