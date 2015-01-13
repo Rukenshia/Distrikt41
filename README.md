@@ -32,12 +32,12 @@ Da dies (hoffentlich) geklärt ist:
 Dieses Tutorial versucht, so einfach wie möglich, die Installation auf einem Server zu erklären, auf dem Windows und Arma 3 schon installiert ist.
 
 
-		Schritt 1:
+Schritt 1:
 	MySQL installieren (Wie? ... Ernsthaft? ... ... http://www.gidf.de (x86 = 32Bit // x64 = 64Bit)
 	ConfigType: ServerMachine
 
 
-		Schritt 1B
+Schritt 1B
 	Nach dem erstellen des MySQL Admins (Der, mit dem Du auf dem Server von externen PCs verbinden möchtest) einen 2. User mit folgenden Einstellungen erstellen:
 
 	MySQL User erstellen:
@@ -45,9 +45,9 @@ Dieses Tutorial versucht, so einfach wie möglich, die Installation auf einem Se
 	Rechte: Vollzugriff
 	Host: localhost
 
-Alternativ (später) den Definer, in den Functions bzw. dem Event, zum vorhandenen Benutzer (mit der Restriktion des Host's "Localhost") umbenennen.
-
-P.S. Das man sich die Passwörter notieren muß, sollte zwar jedem klar sein, aber ich schreibe es trotz allem nochmals hier nieder.
+	Alternativ (später) den Definer, in den Functions bzw. dem Event, zum vorhandenen Benutzer (mit der Restriktion des Host's "Localhost") umbenennen.
+	
+	P.S. Das man sich die Passwörter notieren muß, sollte zwar jedem klar sein, aber ich schreibe es trotz allem nochmals hier nieder.
 
 
 		Schritt 2:
