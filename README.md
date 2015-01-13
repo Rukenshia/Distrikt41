@@ -109,7 +109,7 @@ Missions Dateien herunterladen
 ------------------
 
 Schritt 8:
-D41_MissionFiles.rar öffnen und KOMPLETTEN Inhalt in den Arma 3 HAUPTORDNER (Nicht Addons, Nicht DLC oder sonst irgendwohin!) kopieren!
+D41_extDB29.rar öffnen und KOMPLETTEN Inhalt in den Arma 3 HAUPTORDNER (Nicht Addons, Nicht DLC oder sonst irgendwohin!) kopieren!
 
 ------------------
 
