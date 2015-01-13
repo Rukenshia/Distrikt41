@@ -33,90 +33,107 @@ Da dies (hoffentlich) geklärt ist:
 
 Dieses Tutorial versucht, so einfach wie möglich, die Installation auf einem Server zu erklären, auf dem Windows und Arma 3 schon installiert ist.
 
+------------------
 
-	Schritt 1:
-	MySQL installieren (Wie? ... Ernsthaft? ... ... http://www.gidf.de (x86 = 32Bit // x64 = 64Bit)
-	ConfigType: ServerMachine
+Schritt 1:
+MySQL installieren (Wie? ... Ernsthaft? ... ... http://www.gidf.de (x86 = 32Bit // x64 = 64Bit)
 
+ConfigType: ServerMachine
 
-	Schritt 1B
-	Nach dem erstellen des MySQL Admins (Der, mit dem Du auf dem Server von externen PCs verbinden möchtest) einen 2. User mit folgenden Einstellungen erstellen:
+---------
 
-	MySQL User erstellen:
-	Name: " D41_MySQL "
-	Rechte: Vollzugriff
-	Host: localhost
+Schritt 1B
+Nach dem erstellen des MySQL Admins (Der, mit dem Du auf dem Server von externen PCs verbinden möchtest) einen 2. User mit folgenden Einstellungen erstellen:
 
-	Alternativ (später) den Definer, in den Functions bzw. dem Event, zum vorhandenen Benutzer (mit der Restriktion des Host's "Localhost") umbenennen.
-	
-	P.S. Das man sich die Passwörter notieren muß, sollte zwar jedem klar sein, aber ich schreibe es trotz allem nochmals hier nieder.
+MySQL User erstellen:
+Name: " D41_MySQL "
+Rechte: Vollzugriff
+Host: localhost
 
+Alternativ (später) den Definer, in den Functions bzw. dem Event, zum vorhandenen Benutzer (mit der Restriktion des Host's "Localhost") umbenennen.
 
-		Schritt 2:
-	(Folgende bearbeitung der DB mittels Navicat Lite! - Andere Tools, andere Vorgehensweise/Namen. Mir wumpe, ich "supporte" nur das ;))
+P.S. Das man sich die Passwörter notieren muß, sollte zwar jedem klar sein, aber ich schreibe es trotz allem nochmals hier nieder.
 
-	Ausprobieren, ob man, von extern, auf die DB connecten kann (Empfohlenes Tool: Navicat Lite) - Dabei den Port 3306 (oder den eigens angegebenen nutzen)
+------------------
 
-		Schritt 2B:
-	Falls nötig die Firewall einstellen ((x bei Private/Öffentlich/Domain)
-	Wer keine Ahnung hat wie: http://www.gidf.de
+Schritt 2:
+(Folgende bearbeitung der DB mittels Navicat Lite! - Andere Tools, andere Vorgehensweise/Namen. Mir wumpe, ich "supporte" nur das ;))
 
+Ausprobieren, ob man, von extern, auf die DB connecten kann (Empfohlenes Tool: Navicat Lite) - Dabei den Port 3306 (oder den eigens angegebenen nutzen)
 
-		Schritt 3:
-	Neue DB erstellen - New Database (Bsp. Name: D41_DB)
+---------
 
-		Schritt 3B:
-	Mit Navicat Lite in der neu erstellten "D41_B" die "Distrikt41_DB.sql" ausführen (Rechtsklick auf D41_B -> "execute SQL File..." -> "Distrikt41_DB.sql" auswählen)
+Schritt 2B:
+Falls nötig die Firewall einstellen ((x bei Private/Öffentlich/Domain)
+Wer keine Ahnung hat wie: http://www.gidf.de
 
+------------------
 
+Schritt 3:
+Neue DB erstellen - New Database (Bsp. Name: D41_DB)
 
-		Schritt 4:
-	Komplettpaket auf den Server laden
+---------
 
+Schritt 3B:
+Mit Navicat Lite in der neu erstellten "D41_B" die "Distrikt41_DB.sql" ausführen (Rechtsklick auf D41_B -> "execute SQL File..." -> "Distrikt41_DB.sql" auswählen)
 
-		Schritt 5:
-	Komplettpaket entpacken und den "@Distrikt41" Ordner in den Arma 3 Root (Hauptordner) verschieben. (Pfad wäre z.B.:  "" E:\Steam\Arma3Server\@Distrikt41\addons\Alle pbo Dateien "")
+------------------
 
+Schritt 4:
+Komplettpaket auf den Server laden
 
-		Schritt 6:
-	Keys herunterladen und alle *.bikey Dateien in Arma3/keys einfügen
+------------------
 
+Schritt 5:
+Komplettpaket entpacken und den "@Distrikt41" Ordner in den Arma 3 Root (Hauptordner) verschieben. (Pfad wäre z.B.:  "" E:\Steam\Arma3Server\@Distrikt41\addons\Alle pbo Dateien "")
 
-		Schritt 7:
-	Missions Dateien herunterladen
+------------------
 
+Schritt 6:
+Keys herunterladen und alle *.bikey Dateien in Arma3/keys einfügen
 
-		Schritt 8:
-	D41_MissionFiles.rar öffnen und KOMPLETTEN Inhalt in den Arma 3 HAUPTORDNER (Nicht Addons, Nicht DLC oder sonst irgendwohin!) kopieren!
+------------------
 
+Schritt 7:
+Missions Dateien herunterladen
 
-		Schritt 9:
-	extdb-conf.ini öffnen und Passwort für D41_MySQL (Zeile: 42) anpassen! (ggf. Port anpassen (Zeile: 44), falls ein anderer bei der MySQL Installation angegeben wurde!)
+------------------
 
+Schritt 8:
+D41_MissionFiles.rar öffnen und KOMPLETTEN Inhalt in den Arma 3 HAUPTORDNER (Nicht Addons, Nicht DLC oder sonst irgendwohin!) kopieren!
 
-		Schritt 10:
-	In der Server_config.cfg am Ende (Ja, das ganz ganz unten, wo nix mehr kommt!) folgendes einfügen:
+------------------
 
-	class Missions
-	{
-	class Mission_1
-	{
-	template = "Altis_Life.Altis"; // bzw. "Altis_Life.Bornholm" für Bornholm
-	difficulty = "veteran"; // ODER "regular"
-	};
-	};
+Schritt 9:
+extdb-conf.ini öffnen und Passwort für D41_MySQL (Zeile: 42) anpassen! (ggf. Port anpassen (Zeile: 44), falls ein anderer bei der MySQL Installation angegeben wurde!)
 
+------------------
 
-		Schritt 11:
-	BEC/Rcon installieren/einstellen (Kein Support unsererseits! Seht selber zu, wie das Ding läuft - Es gibt mehr als genügend Tutorials dafür!)
+Schritt 10:
+In der Server_config.cfg am Ende (Ja, das ganz ganz unten, wo nix mehr kommt!) folgendes einfügen:
 
+class Missions
+{
+class Mission_1
+{
+template = "Altis_Life.Altis"; // bzw. "Altis_Life.Bornholm" für Bornholm
+difficulty = "veteran"; // ODER "regular"
+};
+};
 
-		Schritt 12:
-	Server mit dem im Beispiel angegebenen Parametern starten:
-	Bsp:
-	Eine Verknüpfung der "arma3server.exe" auf dem Desktop erstellen.
-	In den Eigenschaften der Verknüpfung bei "Target/Ziel" den Eintrag wie folgt ändern (dabei auf die Nutzung von \ anstatt / achten!)
-	"E:\SteamFiles\Arma3Server\arma3server.exe" /high -autoInit -malloc=tbbmalloc -port=2302 -enableHT -maxmem=3071 -mod=@life_server;@Distrikt41; -config=server_config.cfg -cfg=basic.cfg -bePath=E:\SteamFiles\Arma3Server\BattlEye
+------------------
+
+Schritt 11:
+BEC/Rcon installieren/einstellen (Kein Support unsererseits! Seht selber zu, wie das Ding läuft - Es gibt mehr als genügend Tutorials dafür!)
+
+------------------
+
+Schritt 12:
+Server mit dem im Beispiel angegebenen Parametern starten:
+Bsp:
+Eine Verknüpfung der "arma3server.exe" auf dem Desktop erstellen.
+In den Eigenschaften der Verknüpfung bei "Target/Ziel" den Eintrag wie folgt ändern (dabei auf die Nutzung von \ anstatt / achten!)
+"E:\SteamFiles\Arma3Server\arma3server.exe" /high -autoInit -malloc=tbbmalloc -port=2302 -enableHT -maxmem=3071 -mod=@life_server;@Distrikt41; -config=server_config.cfg -cfg=basic.cfg -bePath=E:\SteamFiles\Arma3Server\BattlEye
 
 
 
