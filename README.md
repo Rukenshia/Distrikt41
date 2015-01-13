@@ -137,19 +137,18 @@ Bsp:
 Eine Verknüpfung der "arma3server.exe" auf dem Desktop erstellen.
 In den Eigenschaften der Verknüpfung bei "Target/Ziel" den Eintrag wie folgt ändern (dabei auf die Nutzung von \ anstatt / achten!)
 "E:\SteamFiles\Arma3Server\arma3server.exe" /high -autoInit -malloc=tbbmalloc -port=2302 -enableHT -maxmem=3071 -mod=@life_server;@Distrikt41; -config=server_config.cfg -cfg=basic.cfg -bePath=E:\SteamFiles\Arma3Server\BattlEye
-
-
-
+ 
+ 
+ 
 Fehlermeldung beim Starten:
-
-
+ 
 Fehlermeldungen lesen, dann http://www.gidf.de
-
+ 
 Ansonsten LESEN:
 https://github.com/Torndeco/extdb
-
-
-
+ 
+ 
+ 
 Distrikt41 basiert auf einer stark modifizierten Altis Life 3.1.4.8 Version von Tonic!
  
 https://github.com/TAWTonic/Altis-Life
@@ -161,10 +160,10 @@ https://github.com/Torndeco/extdb
 Weitere Addons:
  
 Weitere Infos über genutzte Mods innerhalb der Mission unter Map -> Changelog -> "Credits Distrikt41"
-
-
-
-
+ 
+ 
+ 
+ 
 Fehler in Scripten, die nicht von uns sind?
 
 https://community.bistudio.com/
