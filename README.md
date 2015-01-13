@@ -61,7 +61,7 @@ P.S. Das man sich die Passwörter notieren muß, sollte zwar jedem klar sein, ab
 ---------
 
 Schritt 1C:
-Nach der Installation vom MySQL-Server die Datei "my.ini" suchen (öffnen mit notepad/notepad++) und unter "[mysqld]" den Eintrag " event-scheduler=on " hinzufügen! (Wichtig!)
+Nach der Installation vom MySQL-Server die Datei "my.ini" suchen (öffnen mit notepad/notepad++) und unter "[mysqld]" den Eintrag " event-scheduler=on " hinzufügen! (Wichtig!) - Danach die MySQL DB neu starten (Task-Manager - Dienste/Services - MySQL - Neu starten/restart)
 
 ------------------
 
