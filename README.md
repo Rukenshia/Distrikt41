@@ -32,6 +32,7 @@ http://www.bistudio.com/community/licenses/arma-public-license-share-alike
 Da dies (hoffentlich) geklärt ist:
 
 Dieses Tutorial versucht, so einfach wie möglich, die Installation auf einem Server zu erklären, auf dem Windows und Arma 3 schon installiert ist.
+ACHTUNG: KEIN SUPPORT FÜR NITRADO SERVER, DA BEI MYSQL DER event-scheduler AKTIVIERT SEIN MUSS!
 
 ------------------
 
@@ -42,7 +43,12 @@ ConfigType: ServerMachine
 
 ---------
 
-Schritt 1B
+Schritt 1B:
+my.ini suchen und unter "[mysqld]" den Eintrag " event-scheduler=on " hinzufügen! (Wichtig!)
+
+---------
+
+Schritt 1C
 Nach dem erstellen des MySQL Admins (Der, mit dem Du auf dem Server von externen PCs verbinden möchtest) einen 2. User mit folgenden Einstellungen erstellen:
 
 MySQL User erstellen:
