@@ -34,6 +34,10 @@ Da dies (hoffentlich) geklärt ist:
 Dieses Tutorial versucht, so einfach wie möglich, die Installation auf einem Server zu erklären, auf dem Windows und Arma 3 schon installiert ist.
 ACHTUNG: KEIN SUPPORT FÜR NITRADO SERVER, DA BEI MYSQL DER event-scheduler AKTIVIERT SEIN MUSS!
 
+Vorbereitungen:
+
+http://distrikt41.de/viewtopic.php?f=12&t=1522#p5695
+
 ------------------
 
 Schritt 1:
