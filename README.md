@@ -46,8 +46,11 @@ Schritt 1B
 Nach dem erstellen des MySQL Admins (Der, mit dem Du auf dem Server von externen PCs verbinden möchtest) einen 2. User mit folgenden Einstellungen erstellen:
 
 MySQL User erstellen:
+ 
 Name: " D41_MySQL "
+ 
 Rechte: Vollzugriff
+ 
 Host: localhost
 
 Alternativ (später) den Definer, in den Functions bzw. dem Event, zum vorhandenen Benutzer (mit der Restriktion des Host's "Localhost") umbenennen.
