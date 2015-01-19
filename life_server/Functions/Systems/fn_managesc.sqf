@@ -21,12 +21,10 @@ switch (_side) do
 		if(_bool && (_D41_HatHandy == 1)) then
 		{
 			life_radio_west radioChannelAdd [_unit];
-			life_radio_indep radioChannelAdd [_unit];
 		}
 			else
 		{
 			life_radio_west radioChannelRemove [_unit];
-			life_radio_indep radioChannelRemove [_unit];
 		};
 	};
 	
@@ -35,11 +33,9 @@ switch (_side) do
 		if(_bool && (_D41_HatHandy == 1)) then
 		{
 			life_radio_civ radioChannelAdd [_unit];
-			life_radio_indep radioChannelAdd [_unit];
 		}
 			else
 		{
-			life_radio_indep radioChannelRemove [_unit];
 			life_radio_civ radioChannelRemove [_unit];
 		};
 	};
@@ -48,13 +44,19 @@ switch (_side) do
 	{
 		if(_bool) then
 		{
-			life_radio_indep radioChannelAdd [_unit];
+			life_radio_west radioChannelAdd [_unit];
 			life_radio_civ radioChannelAdd [_unit];
 		}
 			else
 		{
-			life_radio_indep radioChannelRemove [_unit];
+			life_radio_west radioChannelRemove [_unit];
 			life_radio_civ radioChannelRemove [_unit];
 		};
 	};
 };
+
+// Ablage
+/*
+life_radio_indep radioChannelAdd [_unit];
+life_radio_indep radioChannelRemove [_unit];
+*/
