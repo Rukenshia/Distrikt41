@@ -15,9 +15,10 @@ _query = format["SELECT pid, pos, containers FROM houses WHERE (pid='%1' OR gid=
 waitUntil{!DB_Async_Active};
 _houses = [_query,2,true] call DB_fnc_asyncCall;
 
-_HouseCheck2 = true;
+
 _return = [];
 {
+	_HouseCheck2 = true;
 	_pos = call compile format["%1",_x select 1];
 	_HouseCheck = nearestObjects [_pos,["D41_Box_IND_Grenades_F","D41_supplyCrate_F","D41_LagerhausKiste_F"], 10];
 	if(count _HouseCheck != 0)then{_HouseCheck2 = false;};
