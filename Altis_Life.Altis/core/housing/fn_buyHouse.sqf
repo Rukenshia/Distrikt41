@@ -44,6 +44,7 @@ if(_action) then {
 	_house setVariable["house_owner",[_uid,profileName],true];
 	_house setVariable["house_soldCheck",false,true];
 	_house setVariable["locked",true,true];
+	_house setVariable["house_owned",true,true];
 	_house setVariable["containers",[],true];
 	_house setVariable["uid",round(random 99999),true];
 	D41_atmGeld = D41_atmGeld - (_houseCfg select 0);

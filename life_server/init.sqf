@@ -132,7 +132,7 @@ if(worldName == "Bornholm")then
 	//Lockup the Wakas
 	private["_waka01","_waka02","_waka03"];
 	_waka01 = nearestObject [[9419.01,5974.51,0],"Land_Cargo_House_V3_F"];
-	_waka02 = nearestObject [[1898.40,8945.15,0],"Land_Cargo_House_V3_F"];
+	_waka02 = nearestObject [[1990.3379,8977.2695,0],"Land_Cargo_House_V3_F"];
 	_waka03 = nearestObject [[9305.70,2561.84,0],"Land_Cargo_House_V3_F"];
 	_waka01 setVariable[format["bis_disabled_Door_%1",1],1,true]; _waka01 animate [format["Door_%1_rot",1],0];
 	_waka02 setVariable[format["bis_disabled_Door_%1",1],1,true]; _waka02 animate [format["Door_%1_rot",1],0];

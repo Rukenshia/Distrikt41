@@ -258,7 +258,6 @@ if(_Item == "D41_BenzinKanister") then
 if(_Item == "D41_Nagelband") then
 	{
 		if(!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"};
-		player removeMagazine _Item;
 		[] spawn life_fnc_spikeStrip;
 		closeDialog 0;
 	};

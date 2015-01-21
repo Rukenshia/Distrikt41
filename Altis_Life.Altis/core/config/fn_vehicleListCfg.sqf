@@ -244,7 +244,7 @@ switch (_shop) do
 			_return set[count _return,["D41_Heli_Transport_04_covered_F",300000]]; //Taru Personenmodul
 			//_return set[count _return,["D41_Heli_Transport_04_Fuel_F",300000]]; //Taru Benzinmodul
         };
-		if((life_D41_Karma > 5000) && license_civ_air) then
+		if((life_D41_Karma > 5000)&& license_civ_air) then
         {
 			_return set[count _return,["civ_mohawk_ion",335000]]; 
 			_return set[count _return,["civ_mohawk_dahoman",335000]]; 
