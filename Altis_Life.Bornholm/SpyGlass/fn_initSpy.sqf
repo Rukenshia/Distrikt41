@@ -186,7 +186,19 @@ A3_Structures_F_Bootcamp_System","A3_Structures_F_Bootcamp_Training","A3_Structu
 "TRYK_Uniform","tfax_nvg","tfaX_units","D41_SchilderZeugs","D41_ClosedBeta141214","D41_Sounds","D41_Patch141222","D41_Taru","D41_Huron","D41_ADAC_mod","D41_sab_An2",
 "D41_Patch150110","D41_HMMWV_RHS","D41_RHS_Vehicles_UH60","rhs_heavyweapons","rhs_weapons","rhsusf_weapons","rhs_infantry","rhs_tigr","rhsusf_vehicles","rhsusf_c_hmmwv",
 "rhsusf_hmmwv","sab_An2","rhsusf_infantry","rhs_c_a2port_car","rhs_c_btr","rhs_gaz66","RHS_US_A2_AirImport","rhsusf_heavyweapons","rhs_a2port_car","rhs_a3retex","rhs_btr70",
-"rhs_btr80","rhsusf_a2port_air"
+"rhs_btr80","rhsusf_a2port_air","DragonFyre_Bullethits","DragonFyre_Explosions", "DragonFyre_Sonic_Cracks", "DragonFyre_230mm_Titan", "DragonFyre_Air_Weapons",
+"DragonFyre_35mm_Autocannon", "DragonFyre_120mm_Cannon", "DragonFyre_Autocannon", "DragonFyre_DAGR", "DragonFyre_DAR", "DragonFyre_Minigun", "DragonFyre_30mm_Cannon",
+"DragonFyre_Gau8", "DragonFyre_155mm_AMOS", "DragonFyre_M134", "DragonFyre_LMGRCWS", "DragonFyre_GMG20", "DragonFyre_GMG40", "DragonFyre_127", "DragonFyre_Skalpel_ATGM",
+"DragonFyre_Skyfire", "DragonFyre_Veh_Titan", "DragonFyre_4Five45", "DragonFyre_ACPC", "DragonFyre_MX", "DragonFyre_M6", "DragonFyre_Khaybar", "DragonFyre_M320R",
+"DragonFyre_EBR", "DragonFyre_FS2000", "DragonFyre_M200", "DragonFyre_P07", "DragonFyre_NLAW", "DragonFyre_PDW", "DragonFyre_Rahim", "DragonFyre_Rook40", "DragonFyre_RPG32",
+"DragonFyre_Scorpian", "DragonFyre_TRG20", "DragonFyre_UGL", "DragonFyre_SDAR", "DragonFyre_Vector", "DragonFyre_Zafir", "DragonFyre_Zubr45", "DragonFyre_Movement",
+"DragonFyre_Distance", "DragonFyre_FighterPlane3", "DragonFyre_CAS_Plane1", "DragonFyre_AH99_Blackfoot", "DragonFyre_AH9_Pawnee", "DragonFyre_UAV_1",
+"DragonFyre_CH67_Huron", "DragonFyre_CH49_Mohawk", "DragonFyre_Mi290_Taru", "DragonFyre_Mi48_Kajman", "DragonFyre_UAV_2", "DragonFyre_Po30_Orca", "DragonFyre_CAS_Plane2",
+"DragonFyre_UH80_GhostHawk", "DragonFyre_WY55_Hellcat", "DragonFyre_Boat_Armed_1", "DragonFyre_2S9_Sorcher", "DragonFyre_AFV4_Gorgon", "DragonFyre_AMV7_Marshal",
+"DragonFyre_BTRK_Kamysh", "DragonFyre_FV720_Mora", "DragonFyre_IFV6a_Cheetah", "DragonFyre_IFV6c_Panther", "DragonFyre_M2A1_Slammer", "DragonFyre_M4_Scorcher",
+"DragonFyre_M5_Sandstorm", "DragonFyre_MBT52_Kuma", "DragonFyre_MSE3_Marid", "DragonFyre_T100_Varsuk", "DragonFyre_ZSU39_Tigris", "DragonFyre_Hatchback",
+"DragonFyre_truck1", "DragonFyre_Hunter", "DragonFyre_Ifrit", "DragonFyre_Offroad", "DragonFyre_Quadbike", "DragonFyre_Strider", "DragonFyre_SUV", "DragonFyre_truck2",
+"DragonFyre_Van", "DragonFyre_Truck3"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
