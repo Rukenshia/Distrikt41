@@ -113,12 +113,14 @@ Missions Dateien herunterladen
 ------------------
 
 Schritt 7:
-D41_extDB29.rar öffnen und KOMPLETTEN Inhalt in den Arma 3 HAUPTORDNER (Nicht Addons, Nicht DLC oder sonst irgendwohin!) kopieren!
+D41_extDB31.rar öffnen und KOMPLETTEN Inhalt in den Arma 3 HAUPTORDNER (Nicht Addons, Nicht DLC oder sonst irgendwohin!) kopieren!
+
+ftp://D41_Mirror1@136.243.2.202/D41_extDB31.rar
 
 ------------------
 
 Schritt 8:
-extdb-conf.ini öffnen und Passwort für D41_MySQL (Zeile: 42) anpassen! (ggf. Port anpassen (Zeile: 44), falls ein anderer bei der MySQL Installation angegeben wurde!)
+extdb-conf.ini öffnen und Passwort für D41_MySQL (Zeile: 56) anpassen! (ggf. Port anpassen (Zeile: 58), falls ein anderer bei der MySQL Installation angegeben wurde!)
 
 ------------------
 
