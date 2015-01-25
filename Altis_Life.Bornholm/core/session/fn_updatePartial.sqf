@@ -13,6 +13,8 @@ _packet = [steamid,playerSide,nil,_mode];
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
 
+if(playerside in [west,independent] && (_mode == 9)) exitWith {};
+
 switch(_mode) do
 {
 	case 0:

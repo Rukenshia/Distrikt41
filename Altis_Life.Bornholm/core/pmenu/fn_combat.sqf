@@ -176,7 +176,7 @@ else
 		};
 		
 		//Set Flip Button
-				if(_curTarget isKindOf "LandVehicle" && count crew _curTarget == 0 && {canMove _curTarget}) then
+				if(_curTarget isKindOf "LandVehicle" && count crew _curTarget == 0) then
 				{
 					_Btn6 ctrlSetText localize "STR_vInAct_Unflip";
 					_Btn6 buttonSetAction "life_pInact_curTarget setPos [getPos life_pInact_curTarget select 0, getPos life_pInact_curTarget select 1, (getPos life_pInact_curTarget select 2)+0.5]; closeDialog 0;";
