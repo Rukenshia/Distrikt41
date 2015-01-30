@@ -239,3 +239,12 @@ CREATE DEFINER=`D41_MySQL`@`localhost` EVENT `4hHouseRentTimer` ON SCHEDULE EVER
 SET rentdate = rentdate - 1
 ;;
 DELIMITER ;
+
+-- ----------------------------
+-- Event structure for `6WeeksPlayerDelete`
+-- ----------------------------
+DROP EVENT IF EXISTS `6WeeksPlayerDelete`;
+DELIMITER ;;
+CREATE DEFINER=`D41_MySQL`@`localhost` EVENT `6WeeksPlayerDelete` ON SCHEDULE EVERY 1 DAY STARTS '2014-09-13 23:59:55' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM players where lastLogin < DATE_SUB( CURRENT_TIME(), INTERVAL 6 Week)
+;;
+DELIMITER ;
