@@ -13,7 +13,7 @@ private["_Mod","_Mode","_Karma"];
 	_Mode = _this select 1;
 	if(playerSide != civilian) exitWith {};
 
-	if(_Mode == 0) exitWith {if(((life_D41_Karma+_Mod) <= 12500) && ((life_D41_Karma+_Mod) >= -12500))then{life_D41_Karma = life_D41_Karma + _Mod}else{systemchat "Maximales Karma erreicht!"; hint "Maximales Karma erreicht!"};};
+	if(_Mode == 0) exitWith {if(((life_D41_Karma+_Mod) <= 12500) && ((life_D41_Karma+_Mod) >= -12500))then{life_D41_Karma = life_D41_Karma + _Mod;}else{systemchat "Maximales Karma erreicht!"; hint "Maximales Karma erreicht!"};};
 	_Karma = _this select 2;
 	
 	call life_fnc_D41_KillMalus;

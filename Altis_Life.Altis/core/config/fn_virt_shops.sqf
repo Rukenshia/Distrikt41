@@ -215,7 +215,7 @@ switch (_shop) do
 					"hlc_rifle_CQBR","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Green","RH_compm4s","RH_SFM952V",
 					"hlc_rifle_vendimus",
 					"hlc_rifle_Bushmaster300","29rnd_300BLK_STANAG","rhsusf_acc_ACOG3","FHQ_optic_HWS_G33",
-					"rhs_weap_m14ebrri","20Rnd_762x51_Mag","rhsusf_acc_LEUPOLDMK4_2",
+					"rhs_weap_m14ebrri","20Rnd_762x51_Mag","FHQ_optic_LeupoldERT",
 					"RH_m3lr","optic_ACO_grn","optic_Aco","optic_MRCO","optic_Arco","optic_Hamr","optic_SOS","optic_DMS","optic_LRPS","acc_flashlight","acc_pointer_IR","rhsusf_acc_anpeq15",
 					"Laserdesignator","HandGrenade_Stone","pmc_earpiece","B_UavTerminal"]
 					]};
@@ -231,7 +231,7 @@ switch (_shop) do
 					"hlc_rifle_CQBR","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Green","RH_compm4s","RH_SFM952V",
 					"hlc_rifle_vendimus",
 					"hlc_rifle_Bushmaster300","29rnd_300BLK_STANAG","rhsusf_acc_ACOG3","FHQ_optic_HWS_G33",
-					"rhs_weap_m14ebrri","20Rnd_762x51_Mag","rhsusf_acc_LEUPOLDMK4_2",
+					"rhs_weap_m14ebrri","20Rnd_762x51_Mag","FHQ_optic_LeupoldERT",
 					"hlc_rifle_psg1","hlc_20rnd_762x51_b_G3",
 					"RH_m3lr","optic_ACO_grn","optic_Aco","optic_MRCO","optic_Arco","optic_Hamr","optic_SOS","optic_DMS","optic_LRPS","acc_flashlight","acc_pointer_IR","rhsusf_acc_anpeq15",
 					"Laserdesignator","HandGrenade_Stone","pmc_earpiece","B_UavTerminal"]
@@ -252,7 +252,7 @@ switch (_shop) do
 					"hlc_rifle_g3ka4","hlc_20rnd_762x51_b_G3","hlc_20rnd_762x51_T_G3","hlc_20rnd_762x51_S_G3","hlc_muzzle_snds_g3",
 					"hlc_rifle_vendimus",
 					"hlc_rifle_Bushmaster300","29rnd_300BLK_STANAG",
-					"rhs_weap_m14ebrri","20Rnd_762x51_Mag","rhsusf_acc_LEUPOLDMK4_2",
+					"rhs_weap_m14ebrri","20Rnd_762x51_Mag","FHQ_optic_LeupoldERT",
 					"hlc_rifle_psg1","hlc_20rnd_762x51_b_G3",
 					"arifle_SDAR_F","20Rnd_556x45_UW_mag",
 					"srifle_LRR_F","7Rnd_408_Mag",

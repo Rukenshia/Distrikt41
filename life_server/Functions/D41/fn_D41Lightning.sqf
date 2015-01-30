@@ -28,12 +28,12 @@ if(true)then
 	"a3\sounds_f\ambient\thunder\thunder_05.wss",
 	"a3\sounds_f\ambient\thunder\thunder_06.wss"
 	] call BIS_fnc_selectRandom;
-	playSound3D [_RndmSound, _BlitzOrt, false, getPosASL _BlitzOrt, 10, 1, 1500];
+	playSound3D [_RndmSound, _BlitzOrt, false, getPosASL _BlitzOrt, 20, 1, 3000];
 	sleep 0.1;
 	_bolt setdamage 1;
 	sleep (random 0.1);
 
-	_class = ["D41_Lightning1_F","D41_lightning2_F"] call bis_Fnc_selectrandom;
+	_class = ["D41_Lightning1_F","D41_lightning2_F"] call bis_fnc_selectrandom;
 	_lightning = _class createvehicle [100,100,100];
 	_lightning setpos _pos;
 

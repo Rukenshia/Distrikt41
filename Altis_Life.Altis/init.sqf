@@ -13,5 +13,6 @@ life_versionInfo = "Altis Life RPG v3.1.4.8 EDIT by Distrikt41.de (V1.1)";
 [] execVM "KRON_Strings.sqf";
 [] execVM "core\D41\D41_Wetter.sqf";
 [] execVM "core\D41\fn_D41_sysM.sqf";
-enableEnvironment false;
+enableEnvironment true;
+setTerrainGrid 45;
 StartProgress = true;

@@ -31,7 +31,7 @@ switch(playerSide) do
 						if((_item in ["D41_TTrackerGummi"]) && !(life_D41_Karma >= 2000)) then
 						{
 							player removeWeapon _item;
-							hint "Du nicht genug Karma um den Taser zu tragen! Geh weg und besorgen dir Karma!";
+							hint "Du nicht genug Karma um den Taser zu tragen! Geh weg und besorg dir Karma!";
 						};
 					};
 	case independent: {};

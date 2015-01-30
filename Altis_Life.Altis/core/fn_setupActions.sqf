@@ -59,3 +59,7 @@ life_actions = life_actions + [player addAction["<t color='#ffff33'>Ohrenstöpse
 life_actions = life_actions + [player addAction["<t color='#ffff33'>Ohrenstöpsel einstecken</t>",life_fnc_D41_EarPlug,"",0,false,false,"",'(vehicle player isKindOf "Car") && (!D41_EarPlugInUse)']];
 life_actions = life_actions + [player addAction["<t color='#ffff33'>Ohrenstöpsel einstecken</t>",life_fnc_D41_EarPlug,"",0,false,false,"",'(vehicle player isKindOf "Ship") && (!D41_EarPlugInUse)']];
 life_actions = life_actions + [player addAction["<t color='#ffff33'>Ohrenstöpsel herausnehmen</t>",{D41_EarPlugInUse = false},"",0,false,false,"",'D41_EarPlugInUse']];
+
+//Geld aufheben
+life_actions = life_actions + [player addAction["Geld aufheben",{_obj = cursorTarget; _obj setVariable["inUse",TRUE,TRUE]; _handle = [_obj] spawn life_fnc_pickupMoney; waitUntil {scriptDone _handle};},"",0,false,false,"",'
+((typeOf cursorTarget) == "Land_Money_F" && (player distance cursorTarget < 2))']];

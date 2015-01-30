@@ -14,6 +14,13 @@ _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
 
 if(playerside in [west,independent] && (_mode == 9)) exitWith {};
+if(playerside in [west,independent] && (_mode == 10)) exitWith {};
+
+if(_mode == 10)exitWith
+	{
+		_D41_Skills = [getPlayerUID player, life_skillApple, life_skillPeach, life_skillSalt, life_skillSand, life_skillIronore, life_skillCopperore, life_skillDiamond, life_skillCannabis, life_skillCocaine, life_skillHeroinu, life_skillOilu, life_skillRawmeat, life_skillcoalu, life_skillBruchstein, life_skillTon, life_skillKrabben, life_skillFischen];
+		[_D41_Skills,"D41_fnc_insertSkillSys",false,false] spawn life_fnc_MP;
+	};
 
 switch(_mode) do
 {

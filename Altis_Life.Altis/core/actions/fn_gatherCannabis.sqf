@@ -15,7 +15,7 @@ _Werkzeug = "D41_Gartenschere";
 _CheckWerkzeug = (_Werkzeug in (assignedItems player));
 _GatherText = {titleText[format["Ernte %1.", _hType],"PLAIN"];}; //gather gestartet
 _GatheredText = {titleText[format["Du hast %1 %2 abgeerntet.",_rndm, _hType],"PLAIN"];}; //gather beendet
-_fnc_gather = {if(player canAdd _type) then {life_action_gather = true; call _GatherText; player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon"; sleep _time; if(alive player)then{call _skillAdd; call _GatheredText; for "_i" from 1 to _rndm do{player addMagazine _type; }; [[getPlayerUID player, _type],"D41_fnc_insertSkillSys",false,false] spawn life_fnc_MP; [_Karma,0] call life_fnc_D41_KSys; }; }else{hint localize "STR_NOTF_InvFull"; }; };
+_fnc_gather = {if(player canAdd _type) then {life_action_gather = true; call _GatherText; player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon"; sleep _time; if(alive player)then{call _skillAdd; call _GatheredText; for "_i" from 1 to _rndm do{player addMagazine _type; }; [_Karma,0] call life_fnc_D41_KSys; }; }else{hint localize "STR_NOTF_InvFull"; }; };
 
 switch(true) do
 {

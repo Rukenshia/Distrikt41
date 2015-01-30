@@ -16,7 +16,7 @@ _Werkzeug = "";
 _CheckWerkzeug = (_Werkzeug in (assignedItems player));
 _GatherText = {titleText[format["Krabbenfallen werden ausgeworfen.", _hType],"PLAIN"];}; //gather gestartet
 _GatheredText = {titleText[format["Du hast %1 %2 gefangen.",_rndm, _hType],"PLAIN"];}; //gather beendet
-_fnc_gather = {if(vehicle player canAdd _type) then {life_action_gather = true; call _GatherText; player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon"; sleep _time; if(alive player)then{call _skillAdd; call _GatheredText; for "_i" from 1 to _rndm do{player addMagazine _type; }; [[getPlayerUID player, _type],"D41_fnc_insertSkillSys",false,false] spawn life_fnc_MP; [_Karma,0] call life_fnc_D41_KSys; }; }else{hint localize "STR_NOTF_InvFull"; }; };
+_fnc_gather = {if(vehicle player canAdd _type) then {life_action_gather = true; call _GatherText; player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon"; sleep _time; if(alive player)then{call _skillAdd; call _GatheredText; for "_i" from 1 to _rndm do{player addMagazine _type; }; [_Karma,0] call life_fnc_D41_KSys; }; }else{hint localize "STR_NOTF_InvFull"; }; };
 if(_skillNeeded < 249) exitWith {hint format ["Um Krabben fangen zu können, wird Fischen auf Skillstufe 3 benötigt (derzeit: %1/250)", _skillNeeded];};
 
 switch(true) do
