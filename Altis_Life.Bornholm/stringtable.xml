@@ -142,7 +142,7 @@
 		</Key>
 		<Key ID="STR_PM_Cop">
 			<Original>Polizei</Original>
-			<English>Polizei</English>
+			<English>Police</English>
 			<German>Polizei</German>
 		</Key>
 		<Key ID="STR_PM_Skill">
@@ -187,12 +187,12 @@
 		</Key>
 		<Key ID="STR_pIntAct_SearchAlk">
 			<Original>Alkoholspiegel prüfen</Original>
-			<English>Check Alcohol</English>
+			<English>Check Alcohol Level</English>
 			<German>Alkoholspiegel prüfen</German>
 		</Key>
 		<Key ID="STR_pIntAct_SearchDrug">
 			<Original>Drogenspiegel prüfen</Original>
-			<English>Check Drugs</English>
+			<English>Drug Test</English>
 			<German>Drogenspiegel prüfen</German>
 		</Key>
 	</Package>
@@ -214,28 +214,119 @@
 			<Portuguese>Menu do Admin</Portuguese>
 		</Key>
 		<Key ID="STR_Admin_Spectate">
-			<Original>Spectate</Original>
-			<English>Spectate</English>
-			<German>Zuschauen</German>
-			<French>Regardez</French>
-		</Key>
-		<Key ID="STR_Admin_TpHere">
-			<Original>TP to</Original>
-			<English>TP to</English>
-			<German>TP zu</German>
-		</Key>
-		<Key ID="STR_ANOTF_Error">
-			<Original>You can't do that dumbass.</Original>
-			<English>You can't do that dumbass.</English>
-			<German>To Be Changed</German>
-			<French>Vous ne pouvez pas le faire sur vous-même</French>
-		</Key>
-		<Key ID="STR_ANOTF_ErrorLevel">
-			<Original>Your Admin Level is not high enough.</Original>
-			<English>Your Admin Level is not high enough.</English>
-			<German>To Be Changed</German>
-			<French>Votre Niveau admin n'est pas suffisamment élevée</French>
-		</Key>
+            <Original>Spectate</Original>
+            <English>Spectate</English>
+            <German>Zuschauen</German>
+            <French>Regardez</French>
+        </Key>
+        <Key ID="STR_Admin_Teleport">
+            <Original>Teleport</Original>
+            <English>Teleport</English>
+            <German>Teleport</German>
+            <French>Teleport</French>
+        </Key>
+        <Key ID="STR_Admin_TpHere">
+            <Original>TP Here</Original>
+            <English>TP Here</English>
+            <German>TP Hier</German>
+            <French>TP Ici</French>
+        </Key>
+        <Key ID="STR_Admin_Debug">
+            <Original>Debug</Original>
+            <English>Debug</English>
+            <German>Debug</German>
+            <French>Debug</French>
+        </Key>
+        <Key ID="STR_Admin_Compensate">
+            <Original>Comp</Original>
+            <English>Comp</English>
+            <German>Comp</German>
+            <French>Comp</French>
+        </Key>
+        <Key ID="STR_Admin_God">
+            <Original>GodMode</Original>
+            <English>GodMode</English>
+            <German>Gott</German>
+            <French>Dieu</French>
+        </Key>
+        <Key ID="STR_Admin_Freeze">
+            <Original>Freeze</Original>
+            <English>Freeze</English>
+            <German>Freeze</German>
+            <French>Geler</French>
+        </Key>
+        <Key ID="STR_Admin_Markers">
+            <Original>Markers</Original>
+            <English>Markers</English>
+            <German>Markers</German>
+            <French>Markers</French>
+        </Key>
+        <Key ID="STR_ANOTF_CompWarn">
+            <Original>You are about to give yourself $%1 to compensate to another player &lt;br/&gt;&lt;br/&gt;You must give this cash to the person you are compensating manually.</Original>
+            <English>You are about to give yourself $%1 to compensate to another player &lt;br/&gt;&lt;br/&gt;You must give this cash to the person you are compensating manually.</English>
+            <German>To Be Changed</German>
+            <French>Vous êtes sur le point de vous donner $%1 pour compenser à un autre joueur &lt;br/&gt;&lt;br/&gt; S'il vous plaît donner à cette à la personne vous compensez manuellement</French>
+        </Key>
+        <Key ID="STR_ANOTF_Success">
+            <Original>You have added $%1 to your account.</Original>
+            <English>You have added $%1 to your account.</English>
+            <German>To Be Changed</German>
+            <French>Vous avez ajouté $%1 à votre compte</French>
+        </Key></Key>
+        <Key ID="STR_ANOTF_Fail">
+            <Original>You can not go above 999999.</Original>
+            <English>You can not go above 999999.</English>
+            <German>To Be Changed</German>
+            <French>Vous ne pouvez pas aller au-dessus $999999</French>
+        </Key>
+        <Key ID="STR_ANOTF_Amount">
+            <Original>Please type in the amount to compensate.</Original>
+            <English>Please type in the amount to compensate.</English>
+            <German>To Be Changed</German>
+            <French>S'il vous plaît entrer la quantité pour compenser</French>
+        </Key>
+        <Key ID="STR_ANOTF_Frozen">
+            <Original>You have disabled %1's input.</Original>
+            <English>You have disabled %1's input.</English>
+            <German>To Be Changed</German>
+            <French>Vous avez désactivé %1's contrôles</French>
+        </Key>
+        <Key ID="STR_ANOTF_Unfrozen">
+            <Original>You have enabled %1's input.</Original>
+            <English>You have enabled %1's input.</English>
+            <German>To Be Changed</German>
+            <French>Vous avez permis %1's contrôles</French>
+        </Key>
+        <Key ID="STR_ANOTF_Error">
+            <Original>You can't do that dumbass.</Original>
+            <English>You can't do that dumbass.</English>
+            <German>To Be Changed</German>
+            <French>Vous ne pouvez pas le faire sur vous-même</French>
+        </Key>
+        <Key ID="STR_ANOTF_ErrorLevel">
+            <Original>Your Admin Level is not high enough.</Original>
+            <English>Your Admin Level is not high enough.</English>
+            <German>To Be Changed</German>
+            <French>Votre Niveau admin n'est pas suffisamment élevée</French>
+        </Key>
+        <Key ID="STR_ANOTF_MDisabled">
+            <Original>Player Markers Disabled.</Original>
+            <English>Player Markers Disabled.</English>
+            <German>To Be Changed</German>
+            <French>Needs Translation</French>
+        </Key>
+        <Key ID="STR_ANOTF_MEnabled">
+            <Original>Player Markers Enabled.</Original>
+            <English>Player Markers Enabled.</English>
+            <German>To Be Changed</German>
+            <French>Needs Translation</French>
+        </Key>
+        <Key ID="STR_NOTF_ActionCancel">
+            <Original>Action Cancelled</Original>
+            <English>Action Cancelled</English>
+            <German>Aktion abgebrochen</German>
+            <French>Action Annulée</French>
+        </Key>
 	</Package>
 	<Package name="Admin_Notifications">
 		<Key ID="STR_ANOTF_Query">
@@ -419,7 +510,7 @@
 	<Package name="Cell_Phone">
 		<Key ID="STR_CELL_Title">
 			<Original>Distrikt41 Mobile</Original>
- 			<English>Distrikt41 Mobile</English>
+ 			<English>KL Mobile</English>
  			<German>Distrikt41 Mobilfunk</German>
 			<French>Distrikt41 mobile</French>
 			<Italian>Cellulare Distrikt41</Italian>
@@ -672,8 +763,8 @@
 			<Portuguese>Esconderijo sobre controle....</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_CaptureCancel">
-			<Original>Capturing cancelled</Original>
-			<English>Capturing cancelled</English>
+			<Original>Capturing canceled</Original>
+			<English>Capturing canceled</English>
 			<German>Einnehmen abgebrochen</German>
 			<French>Capture annulée</French>
 			<Italian>Cattura annullata</Italian>
@@ -744,8 +835,8 @@
 			<Portuguese>Desfazendo gangue...</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_DisbandGangCanc">
-			<Original>Disbanding cancelled</Original>
-			<English>Disbanding cancelled</English>
+			<Original>Disbanding canceled</Original>
+			<English>Disbanding canceled</English>
 			<German>Auflösung abgebrochen</German>
 			<French>Démantèlement annulé</French>
 			<Italian>Scioglimento annullato</Italian>
@@ -753,7 +844,7 @@
 		</Key>
 		<Key ID="STR_GNOTF_DisbandWarn_2">
 			<Original>The leader has disbanded the gang.</Original>
-			<English>Disbanding cancelled</English>
+			<English>Disbanding canceled</English>
 			<German>Der Anführer hat die Gang aufgelöst.</German>
 			<French>Le chef a démantelé le gang.</French>
 			<Italian>Il Capo ha sciolto la Gang</Italian>
@@ -792,8 +883,8 @@
 			<Portuguese>Você enviou um convite para %1 se juntar a sua gangue</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_InviteCancel">
-			<Original>Invitation Cancelled</Original>
-			<English>Invitation Cancelled</English>
+			<Original>Invitation Canceled</Original>
+			<English>Invitation Canceled</English>
 			<German>Einladung abgebrochen</German>
 			<French>Invitation Annulées</French>
 			<Italian>Invito Annullato</Italian>
@@ -840,8 +931,8 @@
 			<Portuguese>Você vai transferir a liderança da gangue para %1&lt;br/&gt;Você não será mais o lider da gangue.</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_TransferCancel">
-			<Original>Transfer of leadership cancelled.</Original>
-			<English>Transfer of leadership cancelled.</English>
+			<Original>Transfer of leadership canceled.</Original>
+			<English>Transfer of leadership canceled.</English>
 			<German>Übertragung der Leitung abgebrochen.</German>
 			<French>Transfert du commandement annulée.</French>
 			<Italian>Trasferimento del comando annullato.</Italian>
@@ -1573,8 +1664,8 @@
 			<Portuguese>Você pegou carne de tartaruga</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_Earned_1">
-			<Original>You have earned €%1 and %2 Karma</Original>
-			<English>You have earned €%1 and %2 Karma</English>
+			<Original>You have earned $%1 and %2 Karma</Original>
+			<English>You have earned $%1 and %2 Karma</English>
 			<German>Du hast €%1 verdient und %2 Karma erhalten</German>
 
 		</Key>
@@ -1947,8 +2038,8 @@
 			<Portuguese>Enviando informações para o servidor, seja paciente.....</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_ActionCancel">
-			<Original>Action Cancelled</Original>
-			<English>Action Cancelled</English>
+			<Original>Action Canceled</Original>
+			<English>Action Canceled</English>
 			<German>Aktion abgebrochen</German>
 			<French>Action Annulée</French>
 			<Italian>Azione Annullata</Italian>
@@ -2265,8 +2356,8 @@
 			<Portuguese>Alguem já está acessando o cofre.</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_NotEnoughCops">
-			<Original>There needs to be 5 or more cops online to continue.</Original>
-			<English>There needs to be 5 or more cops online to continue.</English>
+			<Original>There needs to be 4 or more cops online to continue.</Original>
+			<English>There needs to be 4 or more cops online to continue.</English>
 			<German>Es müssen 5 oder mehr Polizisten online sein, um fortfahren zu können.</German>
 			<French>Il faut au minimum 5 flic pour continuer</French>
 			<Italian>Servono almeno 5 poliziotti online per continuare.</Italian>
