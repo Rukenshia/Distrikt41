@@ -198,7 +198,7 @@ A3_Structures_F_Bootcamp_System","A3_Structures_F_Bootcamp_Training","A3_Structu
 "DragonFyre_BTRK_Kamysh", "DragonFyre_FV720_Mora", "DragonFyre_IFV6a_Cheetah", "DragonFyre_IFV6c_Panther", "DragonFyre_M2A1_Slammer", "DragonFyre_M4_Scorcher",
 "DragonFyre_M5_Sandstorm", "DragonFyre_MBT52_Kuma", "DragonFyre_MSE3_Marid", "DragonFyre_T100_Varsuk", "DragonFyre_ZSU39_Tigris", "DragonFyre_Hatchback",
 "DragonFyre_truck1", "DragonFyre_Hunter", "DragonFyre_Ifrit", "DragonFyre_Offroad", "DragonFyre_Quadbike", "DragonFyre_Strider", "DragonFyre_SUV", "DragonFyre_truck2",
-"DragonFyre_Van", "DragonFyre_Truck3"
+"DragonFyre_Van", "DragonFyre_Truck3","D41_PatchV12","PG_Services_PMC_vehicles","RH_acc","asdg_jr_rhs"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..

@@ -1,4 +1,4 @@
-﻿#include <macro.h>
+#include <macro.h>
 
 //::::::::::::  ::::::::::::\\
 //	Filename: D41/D41_sys.sqf
@@ -35,12 +35,12 @@ D41_Counter = 0;								//Counter halt, nä?
 D41_BlitzerCounter = 0;							//Wieviele Blitzer aufgestellt?
 D41_WandeltUm = false;							//Verarbeitet gerade etwas?
 D41_LagertEin = 0;								//Machta wat oda machta nix? 0 = nope || 1 = Yep
-D41_AnimStop = 0;								//Meh, Anim Gespamme
 D41_EarPlugInUse = false;						//Earplugs gerade in benutzung?
 D41_GeGummigeschosst = false;					//wurde von Gummigeschoss getroffen?
 fed_bank_building = nearestObject [[1543.5426,12932.632,16.641211],"Land_MilOffices_V1_F"]; //Federal Bank Gebäude?
 D41_InUse = 0;									//Verhindern vom spammen der ShortCut Meldungen
 D41_MedReqDone = false;							//Medic request gesendet
+D41_ToolKitUsed = 0;								//Wie oft ein Toolkit genutzt?
 
 //:::::::::::: Distrikt41 Items, welche nicht gespeichert werden dürfen ::::::::::::\\
 

@@ -98,6 +98,7 @@ if ((!isNull _curTarget) && (_Type isKindOf "Man") && (isPlayer _curTarget) && (
 	_Btn1 ctrlSetText localize "STR_Give_Money";
 	_Btn1 buttonSetAction "closeDialog 0; [] spawn life_fnc_D41_GiveMoney;";
 	
+	//Set Chop Off Finger
 	if(_curTarget getVariable "restrained" && ("D41_Gartenschere" in items player OR "D41_Gartenschere" in assignedItems player))then
         {
            
@@ -108,9 +109,20 @@ if ((!isNull _curTarget) && (_Type isKindOf "Man") && (isPlayer _curTarget) && (
 		{
 			_Btn5 ctrlEnable false;
 		};
+	//Set Drug Someone
+	if(_curTarget getVariable "restrained" && (("D41_Heroin" in magazines player) OR ("D41_Kokain" in magazines player) OR ("D41_Cannabis" in magazines player) ))then
+        {
+			_Btn6 ctrlSetText localize "STR_D41_Drug_him";
+			if("D41_Heroin" in magazines player)then{player removeMagazine "D41_Heroin"; _Btn6 buttonSetAction "closeDialog 0; [['D41_Heroin'],""life_fnc_D41_Drugged"",life_pInact_curTarget,false,false] call life_fnc_MP;";};
+			if("D41_Kokain" in magazines player)then{player removeMagazine "D41_Kokain";_Btn6 buttonSetAction "closeDialog 0; [['D41_Kokain'],""life_fnc_D41_Drugged"",life_pInact_curTarget,false,false] call life_fnc_MP;";};
+			if("D41_Cannabis" in magazines player)then{player removeMagazine "D41_Cannabis";_Btn6 buttonSetAction "closeDialog 0; [['D41_Cannabis'],""life_fnc_D41_Drugged"",life_pInact_curTarget,false,false] call life_fnc_MP;";};          
+        }
+		else
+		{
+			_Btn6 ctrlEnable false;
+		};
 	
 	
-	_Btn6 ctrlEnable false;
 	_Btn7 ctrlEnable false;
 	_Btn9 ctrlEnable false;
 	_Btn10 ctrlEnable false;
@@ -125,7 +137,7 @@ else
 
 		//Set Repair Button
 		_Btn0 ctrlSetText localize "STR_vInAct_Repair";
-		_Btn0 buttonSetAction "closeDialog 0; [life_pInact_curTarget] spawn life_fnc_repairTruck;";
+		_Btn0 buttonSetAction "closeDialog 0; [] spawn life_fnc_D41_RepCar;";
 
 		//Set Owner  Button
 		if(playerside == west) then
@@ -168,7 +180,7 @@ else
 		if(playerside == west) then
 		{
 			_Btn4 ctrlSetText localize "STR_vInAct_Impound";
-			_Btn4 buttonSetAction "closeDialog 0; [life_pInact_curTarget] spawn life_fnc_impoundAction;";
+			_Btn4 buttonSetAction "closeDialog 0; deleteVehicle life_pInact_curTarget;";
 		}
 		else
 		{
@@ -251,7 +263,7 @@ else
 			if(playerside == west) then
 			{
 				_Btn4 ctrlSetText localize "STR_vInAct_Impound";
-				_Btn4 buttonSetAction "closeDialog 0; [life_pInact_curTarget] spawn life_fnc_impoundAction;";
+				_Btn4 buttonSetAction "closeDialog 0; deleteVehicle life_pInact_curTarget;";
 			}
 			else
 			{
@@ -325,7 +337,7 @@ else
 				if(playerside == west) then
 				{
 					_Btn4 ctrlSetText localize "STR_vInAct_Impound";
-					_Btn4 buttonSetAction "closeDialog 0; [life_pInact_curTarget] spawn life_fnc_impoundAction;";
+					_Btn4 buttonSetAction "closeDialog 0; deleteVehicle life_pInact_curTarget;";
 				}
 				else
 				{

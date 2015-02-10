@@ -25,6 +25,7 @@ else
 
 _house setVariable["house_id",nil,true];
 _house setVariable["house_owner",nil,true];
+_house setVariable["house_owned",false,true];
 _house setVariable["house_soldCheck",true,true];
 _radius = (((boundingBoxReal _house select 0) select 2) - ((boundingBoxReal _house select 1) select 2));
 _containers = nearestObjects[(getPosATL _house),["D41_Box_IND_Grenades_F","D41_supplyCrate_F","D41_LagerhausKiste_F"],_radius];

@@ -52,6 +52,7 @@ _titleText = _ui displayCtrl 38202;
 _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
 _cP = 0.01;
+[] spawn life_fnc_D41_AnimLoop;
 
 switch (typeOf _building) do {
 	case "Land_MilOffices_V1_F": {_cpRate = 0.003;};
@@ -63,17 +64,6 @@ switch (typeOf _building) do {
 
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1" && (D41_AnimStop == 0)) then
-	{
-		[] spawn
-		{
-			D41_AnimStop = 1;
-			[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] call life_fnc_MP;
-			player playMovenow "AinvPknlMstpSnonWnonDnon_medic_1";
-			sleep 4;
-			D41_AnimStop = 0;
-		};
-	};
 	sleep 0.26;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];

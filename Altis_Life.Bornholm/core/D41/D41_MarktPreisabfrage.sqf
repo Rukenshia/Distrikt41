@@ -1,4 +1,4 @@
-﻿hint parseText format
+hint parseText format
 ["
 <t color='#00ff00'><t size='2'>Preisliste</t></t><br/>
 <t color='#00ff00'><t size='1.5'>Kauf || Verkauf</t></t><br/><br/>

@@ -31,23 +31,13 @@ _titleText = _ui displayCtrl 38202;
 _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
 _cP = 0.01;
+[] spawn life_fnc_D41_AnimLoop;
 
 //[[0,format["%1 wurde dabei gesichtet, wie er ein Fahrzeug aufknackt.",profileName]],"life_fnc_broadcast",west,false] call life_fnc_MP;
 [[0,format["%1 wurde dabei gesichtet, wie er ein Fahrzeug aufknackt.",profileName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1" && (D41_AnimStop == 0)) then
-	{
-		[] spawn
-		{
-			D41_AnimStop = 1;
-			[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] call life_fnc_MP;
-			player playMovenow "AinvPknlMstpSnonWnonDnon_medic_1";
-			sleep 4;
-			D41_AnimStop = 0;
-		};
-	};
 	sleep 0.26;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];

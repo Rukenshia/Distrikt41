@@ -14,8 +14,8 @@ if(!isPlayer _unit) exitWith {}; //Not a human
 if(!(_unit getVariable "restrained")) exitWith {}; //He's not restrained.
 if(!((side _unit) in [civilian,independent])) exitWith {}; //Not a civ
 if(isNull _unit) exitWith {}; //Not valid
-
 [[getPlayerUID _unit,_unit,player,false],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
+
 
 if(isNull _unit) exitWith {}; //Not valid
 detach _unit;

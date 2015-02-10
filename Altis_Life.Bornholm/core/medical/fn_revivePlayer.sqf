@@ -29,21 +29,11 @@ _titleText = _ui displayCtrl 38202;
 _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
 _cP = 0.01;
+[] spawn life_fnc_D41_AnimLoop;
 
 //Lets reuse the same thing!
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1" && (D41_AnimStop == 0)) then
-	{
-		[] spawn
-		{
-			D41_AnimStop = 1;
-			[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] call life_fnc_MP;
-			player playMovenow "AinvPknlMstpSnonWnonDnon_medic_1";
-			sleep 4;
-			D41_AnimStop = 0;
-		};
-	};
 	sleep 0.15;
 	_cP = _cP + 0.01;
 	_progressBar progressSetPosition _cP;
@@ -59,6 +49,7 @@ while {true} do
 
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
+_lock = false;
 player playActionNow "stop";
 if(_target getVariable ["Reviving",ObjNull] != player) exitWith {hint localize "STR_Medic_AlreadyReviving"};
 _target setVariable["Reviving",NIL,TRUE];

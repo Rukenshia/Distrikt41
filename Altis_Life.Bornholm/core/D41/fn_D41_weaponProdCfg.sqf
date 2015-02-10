@@ -38,7 +38,7 @@ switch(_shop) do
 					
 						//Sturmgewehr
 						["CUP_arifle_CZ805_A2","CZ805 A2",40],
-						["30Rnd_556x45_Stanag_Tracer_Red",nil,7],
+						["30Rnd_556x45_Stanag_Tracer_Green",nil,7],
 						["rhs_weap_ak74m_camo","AK74M Camo",50],
 						["rhs_30Rnd_545x39_AK_green",nil,7],
 						["rhs_acc_pkas",nil,7],
@@ -47,7 +47,7 @@ switch(_shop) do
 						["CUP_srifle_M40A3","M40A3",80],
 						["CUP_5Rnd_762x51_M24",nil,14],
 						["hlc_rifle_SAMR","RRA LLR-15",40],
-						["30Rnd_556x45_Stanag_Tracer_Red",nil,7],
+						["30Rnd_556x45_Stanag_Tracer_Green",nil,7],
 						["CUP_optic_RCO",nil,14],
 						
 						//Battlerifle

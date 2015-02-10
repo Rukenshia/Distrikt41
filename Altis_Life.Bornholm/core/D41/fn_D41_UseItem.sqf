@@ -18,6 +18,10 @@ if(_idc == 640)exitWith {hint "Mitn Schädel in dem Kofferraum? Nimms erstmal ra
 		player removeItem "FirstAidKit";
 		hint format ["First Aid Kit benutzt.\n\nSchaden: %1/1", damage player];
 	};*/
+if(_ItemName == "Toolkit") then
+	{
+		[] spawn life_fnc_D41_RepCar;
+	};
 if(_Item == "D41_BeefJerky") then
 	{
 		player removeMagazine _Item;
@@ -166,6 +170,11 @@ if(_Item == "D41_Cannabis") then
 		player removeMagazine _Item;
 		[] spawn life_fnc_weedEffekt;
 		life_DrogenKonsum = life_DrogenKonsum + 1;
+		titleText["Du bekommst einen extremen Lachflash und vergisst dadurch, das Du jemals Schmerzen hast! Leider hast Du auch vergessen, wo Du dein GPS hingelegt hast! Egal! Sinnlos rumfahren macht eh viel mehr Spaß.","PLAIN"];
+		hint "Du bekommst einen extremen Lachflash und vergisst dadurch, das Du jemals Schmerzen hast! Leider hast Du auch vergessen, wo Du dein GPS hingelegt hast! Egal! Sinnlos rumfahren macht eh viel mehr Spaß.";
+		player unassignItem "ItemGPS";
+		player removeItem "ItemGPS";
+		player setdamage 0;
 	};
 if(_Item == "D41_Kokain") then
 	{
@@ -177,9 +186,9 @@ if(_Item == "D41_Kokain") then
 		{
 			life_KokaZeit = time;
 			player enableFatigue false;
-			titleText["Du ziehst Dir ne Nase Koks rein und rennst für die nächsten 5min wie der Flash auf Schlaftabletten!","PLAIN"];
-			hint "Du ziehst Dir ne Nase Koks rein und rennst für die nächsten 5min wie der Flash auf Schlaftabletten!";
-			waitUntil {!alive player OR ((time - life_KokaZeit) > (5 * 60))};
+			titleText["Du ziehst Dir ne Nase Koks rein und rennst für die nächsten 10min wie der Flash auf Schlaftabletten!","PLAIN"];
+			hint "Du ziehst Dir ne Nase Koks rein und rennst für die nächsten 10min wie der Flash auf Schlaftabletten!";
+			waitUntil {!alive player OR ((time - life_KokaZeit) > (10 * 60))};
 			player enableFatigue true;
 		};
 	};
@@ -188,6 +197,20 @@ if(_Item == "D41_Heroin") then
 		player removeMagazine _Item;
 		[] spawn life_fnc_heroinEffekt;
 		life_DrogenKonsum = life_DrogenKonsum + 1;
+		_random = floor(random 101);
+		if(_random > 95) then 
+		{
+			_life = damage player; _NewLife = _life + 0.1; player setDammage _NewLife;
+			titleText["Du bist mit der Nadel abgerutscht und hast dir ein Ei geschossen! Trottel!","PLAIN"];
+			hint "Du bist mit der Nadel abgerutscht und hast dir ein Ei geschossen! Trottel!";
+		}
+		else
+		{
+			titleText["Du gibst dir einen Schuss Heroin und verspürst für die nächste Zeit weder Hunger noch Durst!","PLAIN"];
+			hint "Du gibst dir einen Schuss Heroin und verspürst für die nächste Zeit weder Hunger noch Durst!";
+			life_thirst = 200;
+			life_hunger = 200;
+		};
 	};
 if(_Item == "D41_Salema" OR _Item == "D41_Ornate" OR _Item == "D41_Mackrele" OR _Item == "D41_Tunfisch" OR _Item == "D41_Mullet" OR _Item == "D41_Katzenhai") then
 	{

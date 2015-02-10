@@ -29,22 +29,12 @@ _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 _cpRate = 0.002;
+[] spawn life_fnc_D41_AnimLoop;
 
 [[2,"STR_House_Raid_NOTF",true,[(_house getVariable "house_owner") select 1]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1" && (D41_AnimStop == 0)) then
-	{
-		[] spawn
-		{
-			D41_AnimStop = 1;
-			[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] call life_fnc_MP;
-			player playMovenow "AinvPknlMstpSnonWnonDnon_medic_1";
-			sleep 4;
-			D41_AnimStop = 0;
-		};
-	};
 	uisleep 0.6;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];

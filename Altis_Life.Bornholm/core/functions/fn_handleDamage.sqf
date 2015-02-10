@@ -23,13 +23,13 @@ if(!isNull _source) then
 	if(_source != _unit) then
 	{
 		_curWep = currentWeapon _source;
-		if(_projectile in ["RH_B_22LR_SD"] && _curWep in ["RH_mk2"]) then
+		if(_projectile in ["RH_B_22LR_SD","CUP_B_12Gauge_74Slug"] && _curWep in ["RH_mk2", "CUP_sgun_M1014"]) then
 		{
 			if(vehicle player != player) exitWith {_damage = false;};
 			if(side _source == west && playerSide != west) then
 			{
 				private["_distance","_isVehicle","_isQuad"];
-				_distance = 50;
+				_distance = if(_projectile == "CUP_B_12Gauge_74Slug") then {200} else {50};
 				_isVehicle = if(vehicle player != player) then {true} else {false};
 				_isQuad = if(_isVehicle) then {if(typeOf (vehicle player) == "B_Quadbike_01_F") then {true} else {false}} else {false};
 				
