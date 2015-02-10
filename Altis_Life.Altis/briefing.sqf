@@ -329,9 +329,10 @@ player createDiarySubject ["controls","Steuerung"];
 			"Luft- und Bodenunterstützung", 
 				"
 				1. Helikopter dürfen nur nach Absprache bzw. Erlaubnis des im Dienst höchstrangigen Polizisten eingesetzt werden.<br/>
-				2. Es darf maximal 1 Ghosthawk aktiv sein. Dieser darf nur zur Zerstörung bewaffneter bzw gepanzerter Fahrzeuge eingesetzt werden oder um Hubschrauber und Flugzeuge zum Landen zu zwingen.<br/>
-				3. Es darf maximal 2 Tigr aktiv sein. Dieser darf nur in besonderen Fällen (Geiselnahme, Banküberfall, Großrazia, Event) eingesetzt werden.<br/>
-				4. Bei längerer Verfolgungsjagd (15min+) darf der Ghosthawk eingesetzt werden.<br/><br/>
+				2. Es darf maximal 1 Blackhawk aktiv sein. Dieser darf nur zur Zerstörung bewaffneter bzw gepanzerter Fahrzeuge eingesetzt werden oder um Hubschrauber und Flugzeuge zum Landen zu zwingen. Flüchtige Fahrzeuge können auch zum Stop gezwungen werden.<br/>
+				3. Es darf maximal 2 Tigr/HMMWV aktiv sein. Dieser darf nur in besonderen Fällen (Geiselnahme, Banküberfall, Großrazia, Event) eingesetzt werden.<br/>
+				4. Bei längerer Verfolgungsjagd (15min+) darf der Blackhawk eingesetzt werden.<br/>
+				5. Cal 50 HMMWVs und Blackhawks sind nicht für die Bekämpfung von Personen gedacht und werden für diesen zweck nicht eingesetzt. Sollten diese beschossen werden haben sie das Recht sich zu verteidigen.<br/><br/>
 				"
 		]
 	];

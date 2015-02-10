@@ -30,17 +30,17 @@ class Life_cell_phone {
 	
 	class controls {
 
-		class Admin_Request: Life_RscButtonMenu
-		{
-			idc = 3017;
-			style= 0;
-			text = "Admin Request";
-			onButtonClick = "[] call TON_fnc_cell_textadmin";
-			x = 0.412344 * safezoneW + safezoneX;
-			y = 0.665 * safezoneH + safezoneY;
-			w = 0.0773437 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
+		// class Admin_Request: Life_RscButtonMenu
+		// {
+			// idc = 3017;
+			// style= 0;
+			// text = "Admin Request";
+			// onButtonClick = "[] call TON_fnc_cell_textadmin";
+			// x = 0.412344 * safezoneW + safezoneX;
+			// y = 0.665 * safezoneH + safezoneY;
+			// w = 0.0773437 * safezoneW;
+			// h = 0.022 * safezoneH;
+		// };
 		class Admin_All: Life_RscButtonMenu
 		{
 			idc = 3021;

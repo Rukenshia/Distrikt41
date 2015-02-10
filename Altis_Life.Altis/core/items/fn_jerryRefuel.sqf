@@ -10,6 +10,7 @@ _vehicle = cursorTarget;
 closedialog 0;
 life_interrupted = false;
 if(isNull _vehicle) exitWith {hint localize "STR_ISTR_Jerry_NotLooking"};
+if (!local _vehicle) exitWith {hint "Steige zuerst als Fahrer ein und probier es danach nochmal aus!";};
 if(!(_vehicle isKindOF "LandVehicle") && !(_vehicle isKindOf "Air") && !(_vehicle isKindOf "Ship")) exitWith {};
 if(player distance _vehicle > 7.5) exitWith {hint localize "STR_ISTR_Jerry_NotNear"};
 
@@ -27,15 +28,10 @@ _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
+[] spawn life_fnc_D41_AnimLoop;
 
 while{true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1" && animationState player != "AmovPknlMstpSnonWnonDnon")then
-	{
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] call life_fnc_MP;
-		player playMove "AinvPknlMstpSnonWnonDnon_medic_1";
-	};	
-	
 	sleep 0.2;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
@@ -63,42 +59,24 @@ switch (true) do
 	
 	case (_vehicle isKindOF "LandVehicle"):
 	{
-		if(!local _vehicle) then
-		{
-			[[[_vehicle],{_this select 0 setFuel ((Fuel (_this select 0)) + 0.5);}],"BIS_fnc_spawn",_vehicle,false] call life_fnc_MP;
-		}
-			else
-		{
-			_vehicle setFuel ((Fuel _vehicle) + 0.5);
-		};
+		if (!local _vehicle) exitWith {hint "Du MUSST der letzte auf dem Fahrerslot gewesen sein, um das Fahrzeug betanken zu können! (Grund: Arma Lokalität -.-)";};
+		_vehicle setFuel ((Fuel _vehicle) + 0.5);
 		player removeMagazine "D41_BenzinKanister";
 		player addMagazine "D41_BenzinKanisterLeer";
 	};
 	
 	case (_vehicle isKindOf "Air"):
 	{
-		if(!local _vehicle) then
-		{
-			[[[_vehicle],{_this select 0 setFuel ((Fuel (_this select 0)) + 0.2);}],"BIS_fnc_spawn",_vehicle,false] call life_fnc_MP;
-		}
-			else
-		{
-			_vehicle setFuel ((Fuel _vehicle) + 0.2);
-		};
+		if (!local _vehicle) exitWith {hint "Du MUSST der letzte auf dem Fahrerslot gewesen sein, um das Flugzeug/den Heli betanken zu können! (Grund: Arma Lokalität -.-)";};
+		_vehicle setFuel ((Fuel _vehicle) + 0.2);
 		player removeMagazine "D41_BenzinKanister";
 		player addMagazine "D41_BenzinKanisterLeer";
 	};
 	
 	case (_vehicle isKindOf "Ship"):
 	{
-		if(!local _vehicle) then
-		{
-			[[[_vehicle],{_this select 0 setFuel ((Fuel (_this select 0)) + 0.35);}],"BIS_fnc_spawn",_vehicle,false] call life_fnc_MP;
-		}
-			else
-		{
-			_vehicle setFuel ((Fuel _vehicle) + 0.35);
-		};
+		if (!local _vehicle) exitWith {hint "Du MUSST der letzte auf dem Fahrerslot gewesen sein, um das Schiff betanken zu können! (Grund: Arma Lokalität -.-)";};
+		_vehicle setFuel ((Fuel _vehicle) + 0.35);
 		player removeMagazine "D41_BenzinKanister";
 		player addMagazine "D41_BenzinKanisterLeer";
 	};

@@ -118,7 +118,7 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) > 6) then
 		{
-			_ret set[count _ret,["V_PlateCarrierH_CTRG",nil,10000]];
+			_ret set[count _ret,["V_PlateCarrierIAGL_dgtl",nil,10000]];
 		};
 		if(!license_cop_gangfirma && license_cop_swat) then
 		{

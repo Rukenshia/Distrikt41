@@ -23,6 +23,7 @@
 					if(player getVariable 'restrained') exitWith {hint 'Du hast Deine Hände nicht frei!'};
 					if(player getVariable 'D41_geknueppelt') exitWith {hint 'Du hast Deine Hände nicht frei!'};
 					if(player getVariable 'surrender') exitWith {hint 'Du hast Deine Hände nicht frei!'};
+					if(life_action_inUse) exitWith {hint 'Du hast Deine Hände nicht frei!'};
 					[cursorTarget] call life_fnc_combat;
 					[] call life_fnc_hudUpdate;
 				};

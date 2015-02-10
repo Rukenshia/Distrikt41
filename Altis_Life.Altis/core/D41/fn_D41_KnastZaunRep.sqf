@@ -1,4 +1,4 @@
-﻿/*
+/*
 	File: fn_D41_KnastZaunRep.sqf
 	Author: Distrikt41 - Dscha
 	
@@ -23,20 +23,10 @@ if(_action) then
 	_titleText ctrlSetText format["Schneide Zaun auf (1%1)...","%",_title];
 	_progressBar progressSetPosition 0.01;
 	_cP = 0.01;
+	[] spawn life_fnc_D41_AnimLoop;
 
 	while {true} do
 	{
-		if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1" && (D41_AnimStop == 0)) then
-		{
-			[] spawn
-			{
-				D41_AnimStop = 1;
-				[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] call life_fnc_MP;
-				player playMovenow "AinvPknlMstpSnonWnonDnon_medic_1";
-				sleep 4;
-				D41_AnimStop = 0;
-			};
-		};
 		sleep 1.2;
 		_cP = _cP + 0.01;
 		_progressBar progressSetPosition _cP;

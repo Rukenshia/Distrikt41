@@ -98,7 +98,6 @@ if(side _killer == west && playerSide != west) then {
 	life_copRecieve = _killer;
 	[[getPlayerUID player],"life_fnc_wantedRemove",false,false] call life_fnc_MP;
 	[[0],"life_fnc_removeLicenses",(getPlayerUID player),false] call life_fnc_MP;
-	[[getPlayerUID player,player,_killer,true],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
 	if(life_D41_Karma > 5000)then{life_D41_Karma = life_D41_Karma - 800};
 	if(life_D41_Karma < -5000)then{life_D41_Karma = life_D41_Karma + 400};
 	[9] call SOCK_fnc_updatePartial;

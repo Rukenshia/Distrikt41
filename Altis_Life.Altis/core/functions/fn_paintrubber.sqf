@@ -1,4 +1,4 @@
-﻿/*
+/*
 	File: fn_paintrubber.sqf
 	Author: Bryan "Tonic" Boardwine
 	Edit:// Avka - Distrikt41
@@ -33,14 +33,11 @@ if(_shooter isKindOf "Man" && alive player) then
 		_obj setPosATL (getPosATL _unit);
 		[[player,"AinjPfalMstpSnonWnonDf_carried_fallwc"],"life_fnc_animSync",true,false] call life_fnc_MP;
 
-		
-		
-		_unit2 = _shooter;
 		life_maskiert = 0;
-		if ((goggles _unit2) in D41_goggles_Array) then {life_maskiert = 1};
-		if ((uniform _unit2) in D41_uniform_Array) then {life_maskiert = 1};
-		if ((headgear _unit2) in D41_headgear_Array) then {life_maskiert = 1};
-		if ((hmd _unit2) in D41_hmd_Array) then {life_maskiert = 1};
+		if ((goggles _shooter) in D41_goggles_Array) then {life_maskiert = 1};
+		if ((uniform _shooter) in D41_uniform_Array) then {life_maskiert = 1};
+		if ((headgear _shooter) in D41_headgear_Array) then {life_maskiert = 1};
+		if ((hmd _shooter) in D41_hmd_Array) then {life_maskiert = 1};
 
 		if (life_maskiert > 0) then
 			{

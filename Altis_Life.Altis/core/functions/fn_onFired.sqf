@@ -4,9 +4,15 @@
 	Description:
 	Handles various different ammo types being fired.
 */
-private["_ammoType","_projectile"];
+private["_Gun","_ammoType","_projectile","_removeWeapon"];
+_Gun = _this select 1;
 _ammoType = _this select 4; 
 _projectile = _this select 6;
+
+_removeWeapon = {player removeWeapon _Gun; _holder = "GroundWeaponHolder" createVehicle position player; _holder addWeaponCargoGlobal [_Gun,1]; hint "Nicht genügend Karma für diese Waffe!";};
+if((life_D41_Karma < 2000) && (_Gun == "D41_TTrackerGummi"))then{call _removeWeapon;};
+if((life_D41_Karma < 5000) && (_Gun == "hlc_smg_mp5a3"))then{call _removeWeapon;};
+if((life_D41_Karma < 10000) && (_Gun == "CUP_arifle_Mk16_CQC_EGLM"))then{call _removeWeapon;};
 
 if(_ammoType == "GrenadeHand_stone") then {
 	_projectile spawn {

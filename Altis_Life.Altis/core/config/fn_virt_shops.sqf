@@ -1,4 +1,4 @@
-﻿#include <macro.h>
+#include <macro.h>
 /*
 	File: fn_virt_shops.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -453,7 +453,7 @@ switch (_shop) do
 					if((_shop == "herowaffen") && (life_D41_Karma >= 5000) && (life_D41_Karma <= 9999) && !license_civ_rebel) then {_return =
 		["Hero MP",
 					["D41_TTrackerGummi","Gummigeschiss_Mag",
-					"hlc_smg_MP5N","hlc_30Rnd_9x19_B_MP5",
+					"hlc_smg_mp5a3","hlc_30Rnd_9x19_B_MP5",
 					"optic_Aco_smg","optic_ACO_grn_smg","optic_Holosight_smg","acc_flashlight",
 					"SmokeShellGreen"]
 					]};
@@ -461,7 +461,7 @@ switch (_shop) do
 					if((_shop == "herowaffen") && (life_D41_Karma >= 10000) && !license_civ_rebel) then {_return =
 		["Hero Schwer",
 					["D41_TTrackerGummi","Gummigeschiss_Mag",
-					"hlc_smg_MP5N","hlc_30Rnd_9x19_B_MP5",
+					"hlc_smg_mp5a3","hlc_30Rnd_9x19_B_MP5",
 					"optic_Aco_smg","optic_ACO_grn_smg","optic_Holosight_smg","acc_flashlight",
 					"CUP_arifle_Mk16_CQC_EGLM","CUP_20Rnd_556x45_Stanag","CUP_1Rnd_SmokeGreen_M203",
 					"CUP_optic_RCO_desert","CUP_optic_CompM2_Desert","FHQ_optic_HWS_G33_tan","CUP_optic_ELCAN_SpecterDR","FHQ_optic_ACOG_tan","FHQ_optic_AC11704_tan","optic_Arco","CUP_optic_Eotech533","optic_Hamr",

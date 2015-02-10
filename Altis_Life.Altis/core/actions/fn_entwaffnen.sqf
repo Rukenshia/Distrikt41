@@ -1,34 +1,29 @@
 /*
-	Author: MrKraken
+	Author: Dscha
 	filename: fn_entwaffnen.sqf
 	Description: Entwaffnet Spieler!
-	Edited by Distrik 41 - Dscha fürs entwaffnen
 */
 _holder = "GroundWeaponHolder" createVehicle position player;
-hint "Du wirst gerade entwaffnet!!";
+hint "Deine Waffen werden Dir abgenommen!!";
 
-if(primaryWeapon player != "") then {
-	player action [
-		"DropWeapon",
-		_holder,
-		primaryWeapon player
-	];
-	sleep 0.2;
+if(primaryWeapon player != "") then
+{
+	_Gun = primaryWeapon player;
+	player removeWeapon _Gun;
+	_holder addWeaponCargoGlobal [_Gun,1];
+	
 };
 
-if(handgunWeapon player != "") then {	
-	player action [
-		"DropWeapon",
-		_holder,
-		handgunWeapon player
-	];
-	sleep 0.2;
+if(handgunWeapon player != "") then
+{	
+	_Gun = handgunWeapon player;
+	player removeWeapon _Gun;
+	_holder addWeaponCargoGlobal [_Gun,1];
 };
 
-if(secondaryWeapon player != "") then {	
-	player action [
-		"DropWeapon",
-		_holder,
-		secondaryWeapon player
-	];
+if(secondaryWeapon player != "") then
+{	
+	_Gun = secondaryWeapon player;
+	player removeWeapon _Gun;
+	_holder addWeaponCargoGlobal [_Gun,1];
 };

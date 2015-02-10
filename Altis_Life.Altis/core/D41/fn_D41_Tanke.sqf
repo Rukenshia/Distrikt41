@@ -1,4 +1,4 @@
-﻿/*
+/*
 	File: fn_D41_Tanke.sqf
 	Author: Distrikt41 - Dscha
 	
@@ -8,10 +8,11 @@
 private["_Karre","_Tankstand","_action", "_target", "_FuelSize", "_vehicle", "_name","_ui","_progress","_pgText","_fuelMod"];
 
 _Karre = nearestObjects[getPos player,["Car","Air"],10];
+_vehicle = _Karre select 0;
+if (!local _vehicle) exitWith {hint "Steige zuerst als Fahrer ein und probier es danach nochmal aus!";};
 if(count (_Karre) > 0) then
 {
 	if(D41_Tankt) exitWith {hint "Du hast nur zwei Hände um den Schlauch festzuhalten! *pfeif*"};
-	_vehicle = _Karre select 0;
 	_name = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 	_action = [
 	format["%1 betanken?<br/>Benzinpreis: %2€/Durchlauf", _name, D41_BenzinPreis],"Tanken","Ja","Nein"

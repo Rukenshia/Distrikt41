@@ -305,6 +305,14 @@ class Life_Client_Core
 		class D41_wilhelm {};
 		class D41_ChatMsgPrep {};
 		class D41_ChatMsg {};
+		class D41_AnimLoop {};
+		class D41_Drugged {};
+	};
+	
+	class D41_RepSystem
+	{
+		file = "core\D41\Rep";
+		class D41_RepCar {};
 	};
 
 	class Network

@@ -27,3 +27,5 @@
 #include "revoke_license.h"
 #include "money.hpp"
 #include "Handy.hpp"
+#include "car_status.hpp"
+#include "lkw_status.hpp"
