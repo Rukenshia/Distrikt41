@@ -338,8 +338,8 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="www.Distrikt41.de Altis Life RPG @Bornholm - D41 V1.2";
-		overviewText="www.Distrikt41.de Altis Life RPG @Bornholm - D41 V1.2";
+		briefingName="www.Distrikt41.de Altis Life RPG @Bornholm - D41 V1.1";
+		overviewText="www.Distrikt41.de Altis Life RPG @Bornholm - D41 V1.1";
 		resistanceEast=1;
 		startWeather=0.89999998;
 		startWind=0;
