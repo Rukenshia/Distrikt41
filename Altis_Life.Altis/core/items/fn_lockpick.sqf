@@ -85,7 +85,5 @@ if(!_isVehicle) then {
 		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] call life_fnc_MP;
 		titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
 		[-10,0] call life_fnc_D41_KSys;
-		//Remove Lockpick
-		player removeMagazine "D41_Dietrich";
 	};
 };
