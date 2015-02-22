@@ -11,6 +11,8 @@ life_interrupted = false;
 if(life_action_inUse) exitWith {};
 if(isNull _curTarget) exitWith {}; //Bad type
 _distance = ((boundingBox _curTarget select 1) select 0) + 2;
+if(!("D41_Dietrich" in (magazines player))exitWith{};
+player removeMagazine "D41_Dietrich";
 if(player distance _curTarget > _distance) exitWith {hint "Biste Slenderman? Ich glaube nicht! Beweg dich näher ran!"; player addMagazine "D41_Dietrich";}; //Too far
 _isVehicle = if((_curTarget isKindOf "LandVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
 if(_isVehicle && _curTarget in life_vehicles) exitWith {player addMagazine "D41_Dietrich"; hint localize "STR_ISTR_Lock_AlreadyHave"};
@@ -77,6 +79,7 @@ if(!_isVehicle) then {
 		[[_curTarget],"life_fnc_carlarm",true,false] call life_fnc_MP;
 		[-50,0] call life_fnc_D41_KSys;
 		[[getPlayerUID player,profileName,"214"],"life_fnc_wantedAdd",false,false] call life_fnc_MP;
+		player addMagazine "D41_Dietrich";
 	} else {
 		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] call life_fnc_MP;
 		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] call life_fnc_MP;
